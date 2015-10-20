@@ -1,0 +1,146 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage [top=10mm,bottom=20mm,left=15mm,right=15mm]{geometry}
+\usepackage[frenchb]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{pifont}
+\usepackage{color}
+\usepackage{lmodern}
+\usepackage{rotating}
+\usepackage{datenumber,fp}
+
+\begin{document}
+\newcounter{dateone}%
+\newcounter{datetwo}%
+\setmydatenumber{dateone}{1991}{06}{09}%
+\setmydatenumber{datetwo}{\the\year}{\the\month}{\the\day}%
+\FPsub\result{\thedatetwo}{\thedateone}
+%****************************
+
+
+\sffamily
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.2pt}
+\lfoot{\sffamily\textbf{Sabri BAHRINI}}
+\cfoot{\sffamily\hspace{25mm} \ding{38} (+216) 21 686 031 \hspace{10mm} \ding{49} ~sabri-bahrini.power-teck.tn
+}
+\rfoot{\sffamily\thepage}
+
+\begin{minipage}{11.9cm}
+\begin{flushleft}
+\Huge{\textbf{Sabri BAHRINI}}
+\end{flushleft}
+\begin{flushleft}
+\hspace{5mm}\ding{45} ~16 Rue, Med El Kalai Esprols \\ \textcolor[rgb]{1,1,1}{\hspace{5mm}\ding{45}} ~Boumhel, Ben Arous, Tunisie\\
+\hspace{5mm}\ding{38} ~(+216) 21 686 031\\
+\hspace{5mm}\ding{41} ~sabri.bahrini@gmail.com \\
+\hspace{5mm}\ding{71} ~\FPdiv\myage{\result}{365.2425} %calcule totale
+%\newline
+\FPround\myage{\myage}{0}\myage\ ans, Célibataire\\
+\hspace{5mm}\ding{71} ~Permis B, véhicule
+\end{flushleft}
+ \end{minipage}
+\begin{minipage}{5cm}
+\begin{flushright}
+\includegraphics[width=2.8cm]{sabri}
+\end{flushright}
+\end{minipage}
+\vspace{1mm}
+\begin{center}
+\hrule
+\vspace{2mm}
+\textbf{\large Élève Ingénieur en Informatiques}
+\vspace{2mm}
+\hrule
+\end{center}
+
+\vspace{2mm}
+\begin{dinglist}{97}
+\item {\bf \fontfamily{lmss}\selectfont \large Diplômes}\\
+\begin{tabular}{ll}
+\textcolor[rgb]{0.4,0.4,0.4}{2014 - En cour} &  \textbf{\textit{Ingénierie}} en Système d'Information, \\
+			& École Nationale d'Ingénieur de Carthage \textbf{(ENICarthage)}, Université de Carthage\\			
+& \\ 
+			\textcolor[rgb]{0.4,0.4,0.4}{2013 - En cour} &  \textbf{\textit{Master}} en Sécurité des Systèmes Informatiques Communicants Embarqués (SSICE), \\
+			& Institut Supérieur d'Informatique\textbf{ (ISI)}, Université Tunis El Manar\\			
+			& \\ 
+			\textcolor[rgb]{0.4,0.4,0.4}{2010 - 2013} &  \textbf{\textit{Licence Appliquée}} en Systèmes Informatiques et Logiciels, \\
+			& Institut Supérieur d'Informatique\textbf{ (ISI)}, Université Tunis El Manar\\
+			& \\			
+			\textcolor[rgb]{0.4,0.4,0.4}{2009 - 2010} & \textbf{\textit{Baccalauréat}} en Sciences Informatiques, mention bien,\\
+			& Lycée Hay Essalem, Boumhel\\
+\end{tabular} 
+\end{dinglist}
+
+\vspace{2mm}
+\begin{dinglist}{97}
+\item {\bf \fontfamily{lmss}\selectfont \large Stages et expérience professionnelle}\\
+
+%NextGen
+\begin{tabular}{ll}
+			\textcolor[rgb]{0.4,0.4,0.4}{01 Juillet - 30 septembre 2015} &  \textbf{\textit{Stage d'été}} au sein de la Société \textbf{NextGen corp} \\ 
+			& \ding{71}~Conception, développement d'un Système de gestion de contenu\\	
+			& \\ 
+%lysieng
+			\textcolor[rgb]{0.4,0.4,0.4}{01 Février - 28 Mai 2013}&  \textbf{\textit{Stage de fin d'étude}} (Licence) au sein de la Société \textbf{LYSI ENGINEERING}\\ 
+			& \ding{71}~Création d'un Mapping Objet-Relationnel (\textbf{ORM}) (HTML5, PHP5, MYSQL, XML)\\
+& \\
+%EXTENSUS
+			\textcolor[rgb]{0.4,0.4,0.4}{01 Juillet - 03 Août 2012} &  \textbf{\textit{Stage d'été}} au sein de la Société \textbf{Xtensus}\\ 
+			& \ding{71}~Intégration d'interface Richefaces (J2EE, JSF,Tomcat, MySQL)\\	
+& \\
+%stage sefi
+			\textcolor[rgb]{0.4,0.4,0.4}{17 Juillet - 20 Août 2011} &  \textbf{\textit{Stage d'été}} au sein de la Société d'Équipement et de Fourniture Informatique \textbf{SEFI} \\ 
+			& \ding{71}~Maintenance informatique et installation réseau\\	
+\end{tabular}
+\end{dinglist}
+
+\vspace{2mm}
+\begin{dinglist}{97}
+\item {\bf \fontfamily{lmss}\selectfont \large Compétences Informatiques}\\
+\vskip 0mm
+\begin{tabular}{ll}
+			\textcolor[rgb]{0.4,0.4,0.4}{Langages de programmation} & C++, Java, VB.Net, XML, SQL, PL/SQL\\
+			\textcolor[rgb]{0.4,0.4,0.4}{Développement web} & JavaScript, HTML5, CSS3, PHP5, J2EE\\
+			\textcolor[rgb]{0.4,0.4,0.4}{Développement mobile} & Android\\
+			\textcolor[rgb]{0.4,0.4,0.4}{Bases De Données} & MySQL, Oracle, PostgreSQL\\		
+			\textcolor[rgb]{0.4,0.4,0.4}{IDE} & Eclipse, Netbeans\\
+			\textcolor[rgb]{0.4,0.4,0.4}{Conception
+} & UML\\	
+			\textcolor[rgb]{0.4,0.4,0.4}{Système d'exploitations } & Linux, Windows\\
+			\textcolor[rgb]{0.4,0.4,0.4}{Autre } & Photoshop, Blender, Microsoft Office, \LaTeX{} \\	
+			
+                        
+\end{tabular} 
+\end{dinglist}
+\vspace{1mm}
+\begin{dinglist}{97}
+\item {\bf \fontfamily{lmss}\selectfont \large Langue}\\
+\vskip 0mm
+\begin{center}
+\begin{tabular}{llll}
+			\textcolor[rgb]{0.4,0.4,0.4}{Arabe} langue maternelle & 			
+			\textcolor[rgb]{0.4,0.4,0.4}{Français} lu,parlé,écrit &
+			\textcolor[rgb]{0.4,0.4,0.4}{Anglais} lu,parlé,écrit &
+			\textcolor[rgb]{0.4,0.4,0.4}{Espagnol}  lu,parlé\\
+\end{tabular} 
+\end{center}
+\end{dinglist}
+\vspace{2mm}
+\begin{dinglist}{97}
+\item {\bf \fontfamily{lmss}\selectfont \large Centres d'intérêt}\\
+\vskip 0mm
+\begin{tabular}{l}
+		    Voyage, Scout, Paint-ball\\
+			Formateur et organisateur au sein de \textbf{Freeways} (freeways.tn) association du logiciels et Hardware libre.
+\end{tabular} 
+\end{dinglist}
+
+ \marginpar{\begin{turn}{90} \scriptsize \textsc{\today}, \LaTeX{} \end{turn}}
+ 
+ %annex
+ %\include{annex}
+\end{document}
